@@ -1,6 +1,6 @@
  
 import { initializeApp } from "firebase/app";
-import {getFirestore} from "firebase/firebase"
+import { getFirestore } from "firebase/firestore"
 
 
 const firebaseConfig = {
@@ -11,6 +11,7 @@ const firebaseConfig = {
   messagingSenderId: "486350280200",
   appId: "1:486350280200:web:c0741f5ae67be928ffa3bd"
 };
-const db = getFirestore(app);
 const app = initializeApp(firebaseConfig);
-export {db};
+const db = getFirestore(app);
+
+export { db };
